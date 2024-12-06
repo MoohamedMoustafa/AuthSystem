@@ -39,11 +39,10 @@ function signUp() {
     password: signupPasswordInput.value,
   };
   if (checkUserName(user) && checkEmail(user)) {
-    console.log(user);
     usersList.push(user);
-    console.log(usersList);
     localStorage.setItem("usersList", JSON.stringify(usersList));
     clearInputs();
+    window.location.href = "index.html";
   }
 }
 

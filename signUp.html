@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="card shadow shadow-lg p-5 pt-2 text-center col-lg-10">
+                <h1 class="my-4">Smart Login System</h1>
+                <div class="name mb-3">
+                    <input id="up-name" class="form-control p-2" type="email" placeholder="Enter Your Name">
+                </div>
+                <div id="alert-userName" class="alert alert-danger text-start p-3 d-none" role="alert">
+                    Enter a username that is 3-20 characters long, containing only letters, numbers, dots (.), underscores (_), or hyphens (-).
+                </div>
+                <div class="email mb-3">
+                    <input id="up-email" class="form-control p-2" type="email" placeholder="Enter Your Email">
+                </div>
+                <div id="alert-email" class="alert alert-danger text-start p-3 d-none" role="alert">
+                    Enter a valid email address in the format: example@domain.com. It should include letters, numbers, or special characters before '@', followed by a valid domain name.
+                </div>
+                <div class="password">
+                    <input id="up-password" class="form-control p-2" type="password" placeholder="Enter Your password">
+                </div>
+                <div id="alert-password" class="alert alert-danger text-start p-3 d-none" role="alert">
+                    Your password must be 6-20 characters long and include both letters and numbers.
+                </div>
+                <div class="submit mt-4">
+                    <button id="btn-signup" type="button" class="btn btn-outline-info w-100">Sign Up</button>
+                </div>
+                <div class="text-content mt-3">
+                    <p class="text-white">You have an account? <a id="in-link" href="index.html"
+                            class="text-info text-decoration-none">Signin</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
